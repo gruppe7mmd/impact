@@ -1,5 +1,29 @@
+---
+import Menu from "./menu.astro";
+---
+
+
 <header>
-    <nav>
-        <a href="/">Forside</a>
-    </nav>
+
+        <a href="/">
+<img src="/images/logo_website.svg" alt="Impact Festival logon">
+        </a>
+    <Menu/>
 </header>
+
+<style>
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+
+
+
+    img{
+        width: 150px;
+        height: auto;
+    }
+</style>
