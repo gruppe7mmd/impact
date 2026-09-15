@@ -1,11 +1,80 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/Header.astro';
+
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+
+
+<section class="hero">
+  <img
+    class="hero-image"
+    src="/images/img til forsiden.png"
+    alt="Impact Festival"
+  />
+
+  <div class="hero-text">
+    <h1>IMPACT</h1>
+    <h2>FESTIVAL</h2>
+
+    <p class="tagline">
+      The change we create<br />
+      through what we do.
+    </p>
+
+    <p class="info">
+      20 - 21. SEPT 2026<br />
+      SYDHAVNEN KØBENHAVN
+    </p>
+  </div>
+</section>
 </Layout>
+
+<style>
+  .hero {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+
+	position: absolute;
+  top: 10%;
+  left: 6%;
+  color: white;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    margin: 0;
+  }
+
+  .hero-text h1 {
+  font-size: 100px;
+  line-height: 0.85;
+}
+
+.hero-text h2 {
+  font-size: 45px;
+  line-height: 1;
+}
+.tagline {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+</style>
+
